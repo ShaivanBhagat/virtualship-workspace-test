@@ -14,6 +14,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-pip \
     python3-venv \
     python3-dev \
+    libgdal-dev \
+    libgeos-dev \
+    libproj-dev \
+    libnetcdf-dev \
+    libhdf5-dev \
     && rm -rf /var/lib/apt/lists/*
 
 ENV VIRTUAL_ENV=/opt/venv
